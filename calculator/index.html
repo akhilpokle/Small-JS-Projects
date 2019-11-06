@@ -1,0 +1,36 @@
+<div class="main">
+    <div class="result"><input id="result" name="result" value = ""></div>
+    <div class="in" id="in">
+        <table>
+            <tr>
+                <td id="button" type="button" class="btn btn-secondary" onclick="clean()">C</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="back()"><</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert('%')">%</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert('/')">/</td>
+            </tr>
+            <tr>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(7)">7</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(8)">8</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(9)">9</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert('*')">*</td>
+            </tr>
+            <tr>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(4)">4</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(5)">5</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(6)">6</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert('-')">-</td>
+            </tr>
+            <tr>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(1)">1</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(2)">2</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert(3)">3</td>
+                <td id="button" type="button" class="btn btn-secondary" onclick="insert('+')">+</td>
+            </tr>
+            <tr>
+                <td colspan = "2" id="button" type="button" class="btn btn-secondary">0</td>
+                <td id="button" type="button" style="padding-left:19px; padding-right:10px;" class="btn btn-secondary">.</td>
+                <td id="button" type="button" style="width:35px;" class="btn btn-secondary" onclick="output()">=</td>
+            </tr>
+        </table>
+    </div>
+</div>
