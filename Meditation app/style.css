@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app{
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.time-select,
+.sound-picker,
+.player-container{
+	display: flex;
+	height: 80%;
+	flex:1;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.player-container{
+	position: relative;
+}
+
+.player-container svg{
+	position: absolute;
+	height: 50%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%) rotate(-90deg);
+	pointer-events: none;
+}
+
+.time-display{
+	position: absolute;
+	bottom: 10%;
+	color: white;
+	font-size: 50px;
+}
+
+.vid-container{
+	position: fixed;
+	top:0%;
+	left:0%;
+	width: 100%;
+	z-index:-10;
+}
+
+.time-select button,
+.sound-picker button{
+	color:white;
+	width:30%;
+	height:10%;
+	background: none;
+	border:2px solid white;
+	cursor: pointer;
+	border-radius: 2px;
+	font-size: 15px;
+	transition: all 0.5s ease;
+}
+
+.time-select button:hover{
+	color:black;
+	background: white;
+}
+
+.sound-picker button{
+	border:none;
+	height:120px;
+	width:120px;
+}
+
+
